@@ -1,0 +1,728 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+#header{
+    display: flex;
+}
+
+#slideshow{
+    height: 100vh;
+    position: relative;
+    width: 70%;
+}
+
+#slideshow img{
+    height: 100vh;
+    left:0;
+    object-fit: cover;
+    opacity: 0.0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 8;
+}
+
+#slideshow img.active{
+    opacity: 1.0;
+    z-index: 10;
+}
+
+#slideshow img.last-active{
+    z-index: 9;
+}
+
+.contents{
+    margin: auto;
+}
+
+.contents a{
+    color: #965656;
+    font-family: serif;
+    font-size: 30px;
+    line-height: 2;
+}
+
+#philosophy h2{
+    color: #965656;
+    font-family: serif;
+    font-size: 50px;
+    margin: 100px 0 0 80px;
+    position: relative;
+}
+
+#philosophy h2::after{
+    border-bottom: solid 3px #965656;
+    bottom: -3px; 
+    content: " ";
+    display: block;
+    position: absolute;
+    transform: translateX(80px);
+    width: 400px;
+}
+
+.philosophy-flex{
+    display: flex;
+}
+
+.philosophy-text{
+    height: 500px;
+    text-align: center;
+    width: 50%;
+}
+
+.space{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 120px;
+}
+
+.owner{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 80px;
+}
+
+.philosophy-text .view-more{
+    margin-top: 125px;
+}
+
+.philosophy-text .view-more a{
+    background-color: #965656;
+    color: #fff;
+    font-family: serif;
+    font-weight: bold;
+    padding: 15px 60px;
+}
+
+.philosophy-img{
+    text-align: center;
+    width: 50%;
+}
+
+.philosophy-img img{
+    height: 500px;
+    width: 500px;
+}
+
+#service{
+    margin-bottom: 100px;
+}
+
+#service h2{
+    color: #965656;
+    font-family: serif;
+    font-size: 50px;
+    margin-left: auto;
+    margin-top: 100px;
+    position: relative;
+    width: 40%;
+}
+
+#service h2::after{
+    border-bottom: solid 3px #965656;
+    bottom: -3px; 
+    content: " ";
+    display: block;
+    position: absolute;
+    transform: translateX(80px);
+    width: 400px;
+}
+
+.service-bg{
+    background-color: #efefef;
+    height: 650px;
+    margin-top: 100px;
+    position: relative;
+    width: 90%;
+}
+
+.left-img{
+    left: 2%;
+    position: absolute;
+    top: -15%;
+    width: 35%;
+}
+
+.service-text{
+    left: 55%;
+    -ms-transform: translate(-50%, -50%);
+    position: absolute;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);   
+}
+
+.service-text p{
+    color: #555;
+    font-family: serif;
+    font-size: 20px;
+    line-height: 3;
+    text-align: right;
+}
+
+.service-bg .view-more{
+    left: 55%;
+    -ms-transform: translate(-50%, -50%);
+    position: absolute;
+    top: 70.6%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.service-bg .view-more a{
+    border: solid 1px #555;
+    color: #555;
+    font-family: serif;
+    font-weight: bold;
+    padding: 15px 60px;
+}
+
+.right-img{
+    position: absolute;
+    right: -10%;
+    top: 25%;
+    width: 40%;
+}
+
+.reserve-btn{
+    right: 25%;
+    position: absolute;
+    top: 85%; 
+}
+
+.reserve-btn a{
+    background-color: #965656;
+    color: #fff;
+    font-family: serif;
+    font-weight: bold;
+    padding: 15px 100px;
+}
+
+.gallery-flex{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+#gallery{
+    width: 40%;
+}
+
+#gallery h2{
+    color: #965656;
+    font-family: serif;
+    font-size: 50px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+#gallery h2::after{
+    border-bottom: solid 3px #965656;
+    bottom: -3px; 
+    content: " ";
+    display: block;
+    position: absolute;
+    transform: translateX(80px);
+    width: 400px;
+}
+
+.gallery-img{
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    width: 400px;
+}
+
+.gallery-img img{
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.gallery-img .hair-style{
+    background-color: #fff;
+    color: #000;
+    font-family: serif;
+    font-weight: bold;
+    left: 0;
+    padding: 15px 90px;
+    position: absolute;
+    top: 0;
+}
+
+.gallery-img .view-more{
+    bottom: 0;
+    position: absolute;
+    right: 0; 
+}
+
+.gallery-img .view-more p{
+    background-color: #fff;
+    padding: 15px 90px;
+}
+
+.gallery-img .view-more a{
+    color: #000;
+    font-family: serif;
+    font-weight: bold;
+}
+
+#instagram{
+    width: 40%;
+}
+
+#instagram h2{
+    color: #965656;
+    font-family: serif;
+    font-size: 50px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+#instagram h2::after{
+    border-bottom: solid 3px #965656;
+    bottom: -3px; 
+    content: " ";
+    display: block;
+    position: absolute;
+    transform: translateX(80px);
+    width: 400px;
+}
+
+.black{
+    background-color: #000;
+    height: 400px;
+    margin: 0 auto;
+    width: 400px;
+}
+
+.item-flex{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+#select-item{
+    margin-bottom: 100px;
+}
+
+#select-item .title{
+    color: #965656;
+    font-family: serif;
+    font-size: 50px;
+    margin: 0 0 100px 80px;
+    position: relative;
+}
+
+#select-item .title::after{
+    border-bottom: solid 3px #965656;
+    bottom: -3px; 
+    content: " ";
+    display: block;
+    position: absolute;
+    transform: translateX(80px);
+    width: 400px;
+}
+
+.swiper{
+    width: 32%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+#online-shop{
+    position: relative;
+    width: 48%;
+}
+
+.shop-img{
+    position: relative;
+}
+
+.shop-img::before{
+    background-color: rgba(0, 0, 0, .6);
+    content: '';
+    height: 98%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.shop-text{
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+#online-shop h2{
+    color: #fff;
+    font-family: serif;
+    font-size: 50px;
+    position: relative;
+    white-space: nowrap;
+}
+
+#online-shop h2::after{
+    border-bottom: solid 3px #fff;
+    bottom: -3px; 
+    content: " ";
+    display: block;
+    position: absolute;
+    transform: translateX(80px);
+    width: 400px;
+}
+
+#access h2{
+    color: #965656;
+    font-family: serif;
+    font-size: 50px;
+    margin-left: auto;
+    margin-top: 100px;
+    position: relative;
+    width: 40%;
+}
+
+#access h2::after{
+    border-bottom: solid 3px #965656;
+    bottom: -3px; 
+    content: " ";
+    display: block;
+    position: absolute;
+    transform: translateX(80px);
+    width: 400px;
+}
+
+.access-flex{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.access-text h3{
+    color: #965656;
+    font-family: serif;
+    font-size: 30px;
+}
+
+.access-text p{
+    font-family: serif;
+    font-size: 30px;
+    margin: 30px;
+}
+
+iframe{
+    height: 450px;
+    width: 450px;
+}
+
+.map p{
+    border: solid 1px #965656;
+    color: #965656;
+    font-family: serif;
+    font-size: 40px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#footer p{
+    font-size: 40px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#footer span{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 520px) {
+
+    #slideshow{
+        width: 100%;
+    }
+
+    .contents{
+        display: none;
+    }
+
+    #philosophy h2{
+        color: #e9ac28;
+        font-size: 30px;
+        margin: 60px 0 0 30px;
+    }
+    
+    #philosophy h2::after{
+        border-bottom: solid 3px #e9ac28;
+        transform: translateX(50px);
+        width: 230px;
+    }
+    
+    .philosophy-flex{
+        flex-direction: column;
+    }
+
+    .philosophy-text{
+        height: 315px;
+        margin: 0 auto;
+        width: 96%;
+    }
+    
+    .space{
+        font-size: 15px;
+        margin-top: 30px;
+    }
+    
+    .owner{
+        font-size: 15px;
+        margin-top: 30px;
+    }
+    
+    .philosophy-text .view-more{
+        margin-top: 60px;
+    }
+    
+    .philosophy-text .view-more a{
+        background-color: #e9ac28;
+    }
+    
+    .philosophy-img{
+        text-align: center;
+        width: 100%;
+    }
+    
+    .philosophy-img img{
+        width: 100%;
+    }
+
+    #service{
+        margin-bottom: 60px;
+    }
+    
+    #service h2{
+        color: #e9ac28;
+        font-size: 30px;
+        margin: 60px 0 0 30px;
+        width: 100%;
+    }
+    
+    #service h2::after{
+        border-bottom: solid 3px #e9ac28;
+        transform: translateX(50px);
+        width: 230px;
+    }
+    
+    .service-bg{
+        margin: 60px 0 0 auto;
+        width: 85%;
+    }
+    
+    .left-img{
+        left: auto;
+        right: 0;
+        top: 10%;
+        width: 50%;
+    }
+    
+    .service-text{
+        left: 15%;
+        top: 22%;  
+    }
+    
+    .service-text p{
+        font-size: 15px;
+        line-height: 2;
+    }
+    
+    .service-bg .view-more{
+        left: 15%;
+        top: 38%;
+    }
+    
+    .service-bg .view-more a{
+        padding: 15px 40px;
+    }
+    
+    .right-img{
+        left: -20%;
+        right: auto;
+        top: 55%;
+        width: 80%;
+    }
+    
+    .reserve-btn{
+        right: 25%;
+        top: 88%; 
+    }
+    
+    .reserve-btn a{
+        background-color: #e9ac28;
+        padding: 15px 40px;
+    }
+
+    .gallery-flex{
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+    
+    #gallery{
+        width: 100%;
+    }
+    
+    #gallery h2{
+        color: #e9ac28;
+        font-size: 30px;
+        margin: 60px 0 0 30px;
+    }
+    
+    #gallery h2::after{
+        border-bottom: solid 3px #e9ac28;
+        transform: translateX(50px);
+        width: 230px;
+    }
+    
+    .gallery-img{
+        height: 300px;
+        margin-top: 60px;
+        width: 300px;
+    }
+    
+    .gallery-img img{
+        height: 300px;
+    }
+    
+    .gallery-img .hair-style{
+        padding: 15px 40px;
+    }
+    
+    .gallery-img .view-more p{
+        padding: 15px 40px;
+    }
+    
+    #instagram{
+        width: 100%;
+    }
+    
+    #instagram h2{
+        color: #e9ac28;
+        font-size: 30px;
+        margin: 60px 0 0 30px;
+    }
+    
+    #instagram h2::after{
+        border-bottom: solid 3px #e9ac28;
+        transform: translateX(50px);
+        width: 230px;
+    }
+    
+    .black{
+        height: 300px;
+        margin-top: 60px;
+        width: 300px;
+    }
+    
+    .item-flex{
+        flex-direction: column;
+    }
+    
+    #select-item{
+        margin-bottom: 60px;
+    }
+    
+    #select-item .title{
+        color: #e9ac28;
+        font-size: 30px;
+        margin: 60px 0 0 30px;
+    }
+    
+    #select-item .title::after{
+        border-bottom: solid 3px #e9ac28;
+        transform: translateX(50px);
+        width: 230px;
+    }
+    
+    .swiper{
+        margin-top: 60px;
+        width: 100%;
+    }
+    
+    #online-shop{
+        margin-top: 60px;
+        width: 100%;
+    }
+    
+    #online-shop h2{
+        font-size: 30px;
+    }
+    
+    #online-shop h2::after{
+        transform: translateX(50px);
+        width: 230px;
+    }
+
+    #access h2{
+        color: #e9ac28;
+        font-size: 30px;
+        margin: 60px 0 0 30px;
+        width: 100%;
+    }
+    
+    #access h2::after{
+        border-bottom: solid 3px #e9ac28;
+        transform: translateX(50px);
+        width: 230px;
+    }
+    
+    .access-flex{
+        display: block;
+        margin-top: 60px;
+    }
+    
+    .access-text h3{
+        display: none;
+    }
+    
+    .access-text p{
+        display: none;
+    }
+
+    .map{
+        text-align: center;
+    }
+    
+    iframe{
+        height: 300px;
+        width: 300px;
+    }
+    
+    .map p{
+        border: solid 1px #e9ac28;
+        color: #e9ac28;
+        font-size: 30px;
+        margin: 30px auto 0 auto;
+        width: 300px;
+    }
+    
+    #footer p{
+        font-size: 20px;
+        margin-top: 60px;
+        text-align: center;
+    }
+
+}
